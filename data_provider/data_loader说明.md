@@ -1,4 +1,4 @@
-## data_loader功能注释
+## data_loader说明
 `data_loader.py` 文件定义了几个自定义数据集类，用于从不同来源加载和处理时间序列数据。每个类都继承自 `torch.utils.data.Dataset`，并针对特定的数据格式和需求进行了定制。以下是每个类功能的详细解读：
 
 ### 数据集类的通用结构
