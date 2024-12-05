@@ -1,4 +1,4 @@
-## exp_long_term_forecast注释-V2 
+## exp_long_term_forecast说明-V2 
 
 以上代码是一个用于长时间序列预测任务的实验实现类，`Exp_Long_Term_Forecast`。它继承自基础实验类`Exp_Basic`，并实现了一个基于深度学习的时间序列预测框架。以下是该代码的功能详细说明：
 
