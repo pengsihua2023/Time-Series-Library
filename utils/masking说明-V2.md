@@ -1,4 +1,4 @@
-## masking说明
+## masking说明-V2
 这段代码定义了两个用于生成遮罩矩阵（mask）的类：`TriangularCausalMask` 和 `ProbMask`。这些遮罩矩阵主要用于自回归或基于注意力机制的深度学习模型（如Transformer），以限制模型在计算时访问未来的信息或特定位置的信息。以下是代码的详细功能分析：
 
 ---
