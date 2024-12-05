@@ -1,4 +1,4 @@
-## exp_long_term_forecasting注释
+## exp_long_term_forecasting说明
 这段代码属于一个继承自`Exp_Basic`的类`Exp_Long_Term_Forecast`，用于执行长期时间序列预测任务。该类扩展了基础类，实现了数据加载、模型构建、训练、验证、测试和结果保存等多个核心功能。具体功能如下：
 
 ### 初始化和模型构建
