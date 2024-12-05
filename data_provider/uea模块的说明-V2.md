@@ -36,14 +36,12 @@
    - **实现细节：**
      - 支持以下四种归一化类型：
        1. **标准化 (`standardization`)：**
-          \[
-          z = \frac{x - \mu}{\sigma}
-          \]
+![image](https://github.com/user-attachments/assets/86bad227-9b68-4322-bf7c-9584f00f58af)  
+
           - 使用全局均值和标准差归一化。
        2. **最小-最大归一化 (`minmax`)：**
-          \[
-          z = \frac{x - \text{min}}{\text{max} - \text{min}}
-          \]
+![image](https://github.com/user-attachments/assets/0fea33e1-ff12-47a6-aa15-d429e6b245ca)  
+
           - 使数据缩放到 [0, 1] 区间。
        3. **每样本标准化 (`per_sample_std`)：**
           - 对每个样本单独计算均值和标准差。
