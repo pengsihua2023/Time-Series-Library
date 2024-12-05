@@ -11,7 +11,7 @@
 #### 初始化参数：
 - **`B`**: 批量大小（batch size）。
 - **`L`**: 序列长度（sequence length）。
-- **`device`**: 设备（如 `"cpu"` 或 `"cuda"`）。
+- **`device`**: 设备（如 `"cpu"` 或 `"cuda"`）。 
 
 #### 关键逻辑：
 1. 创建了一个形状为 `[B, 1, L, L]` 的张量，全为 `True`。
@@ -57,39 +57,8 @@
 
 #### 示例：
 假设：
-B=2,H=1,L=3，
-scores.shape
-=
-[
-2
-,
-1
-,
-3
-,
-3
-]
-scores.shape=[2,1,3,3]，
-index
-=
-[
-[
-0
-,
-1
-,
-2
-]
-,
-[
-2
-,
-0
-,
-1
-]
-]
-index=[[0,1,2],[2,0,1]]。
+![image](https://github.com/user-attachments/assets/693cba20-ce67-4221-8ec5-279d46664bf3)
+
 
 生成的遮罩会根据 `index` 对不同位置的元素进行动态遮蔽。
 
