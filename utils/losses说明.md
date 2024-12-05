@@ -88,42 +88,8 @@
 
 **损失公式**：
 
-MASE= 
-N−k
-1
-​
- ∑ 
-i=k+1
-N
-​
- ∣y 
-i
-​
- −y 
-i−k
-​
- ∣
-∑ 
-i=1
-N
-​
- ∣ 
-y
-^
-​
-  
-i
-​
- −y 
-i
-​
- ∣
-​
- 
+![image](https://github.com/user-attachments/assets/00c1d777-2d74-4003-8a4e-c16504518475)  
 
-\[
-\text{MASE} = \frac{\sum_{i=1}^N |\hat{y}_i - y_i|}{\frac{1}{N-k} \sum_{i=k+1}^N |y_i - y_{i-k}|}
-\]
 
 **方法**：
 1. 计算基线误差：`insample` 数据的滞后（频率 `freq`）绝对差值均值。
