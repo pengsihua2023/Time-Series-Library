@@ -56,7 +56,8 @@
 - **`mask`**: 返回生成的遮罩矩阵。
 
 #### 示例：
-假设：
+假设：  
+
 ![image](https://github.com/user-attachments/assets/693cba20-ce67-4221-8ec5-279d46664bf3)
 
 
