@@ -9,9 +9,8 @@
 - **全称**: Root Relative Squared Error（相对平方误差的平方根）
 - **功能**: 计算预测值与真实值之间的相对平方误差，归一化误差以便比较不同数据集上的模型表现。
 - **公式**:  
-  \[
-  \text{RSE} = \frac{\sqrt{\sum (\text{true} - \text{pred})^2}}{\sqrt{\sum (\text{true} - \text{true.mean()})^2}}
-  \]
+![image](https://github.com/user-attachments/assets/d981420c-1774-4589-9c5b-4ebd4708087c)  
+
 - **解读**: 
   - 分子表示预测值与真实值的总平方误差。
   - 分母是基于真实值均值的平方误差，起到归一化的作用。
@@ -23,9 +22,8 @@
 - **全称**: Correlation Coefficient（相关系数）
 - **功能**: 计算预测值与真实值之间的相关性，用于评估两者变化趋势的相似度。
 - **公式**:  
-  \[
-  \text{CORR} = \frac{\sum ((\text{true} - \text{true.mean}) \cdot (\text{pred} - \text{pred.mean}))}{\sqrt{\sum (\text{true} - \text{true.mean})^2 \cdot \sum (\text{pred} - \text{pred.mean})^2}}
-  \]
+![image](https://github.com/user-attachments/assets/3decc0a2-3795-4d09-b987-e624f0365cd2)  
+
 - **解读**: 
   - 返回值介于 -1 和 1 之间：
     - 值接近 1 表示强正相关。
@@ -39,9 +37,8 @@
 - **全称**: Mean Absolute Error（平均绝对误差）
 - **功能**: 测量预测值与真实值之间绝对误差的平均值。
 - **公式**:  
-  \[
-  \text{MAE} = \frac{1}{n} \sum |\text{true} - \text{pred}|
-  \]
+![image](https://github.com/user-attachments/assets/c272c744-9c8d-4d80-be76-bb9f5119a157)  
+
 - **解读**: 
   - 反映了预测值与真实值的平均偏差。
   - 值越小，模型越精确。
@@ -52,9 +49,8 @@
 - **全称**: Mean Squared Error（均方误差）
 - **功能**: 计算预测值与真实值之间误差的平方平均值。
 - **公式**:  
-  \[
-  \text{MSE} = \frac{1}{n} \sum (\text{true} - \text{pred})^2
-  \]
+![image](https://github.com/user-attachments/assets/2a33df0e-c779-45f9-abff-4d66117b2714)  
+
 - **解读**: 
   - 强调较大的误差，因为平方放大了差值。
   - 常用于衡量模型的总体预测性能。
@@ -65,9 +61,8 @@
 - **全称**: Root Mean Squared Error（均方根误差）
 - **功能**: 计算 MSE 的平方根，将误差单位与原始数据保持一致。
 - **公式**:  
-  \[
-  \text{RMSE} = \sqrt{\text{MSE}}
-  \]
+![image](https://github.com/user-attachments/assets/bf1afacd-c410-4dbb-8b58-228b591c1cdf)  
+
 - **解读**: 
   - 与 MSE 类似，但由于对误差平方根的操作，其值更加直观。
   - 值越小，模型性能越好。
@@ -78,9 +73,8 @@
 - **全称**: Mean Absolute Percentage Error（平均绝对百分比误差）
 - **功能**: 测量预测值相对于真实值的平均绝对百分比误差。
 - **公式**:  
-  \[
-  \text{MAPE} = \frac{1}{n} \sum \left| \frac{\text{true} - \text{pred}}{\text{true}} \right|
-  \]
+![image](https://github.com/user-attachments/assets/116d818d-97fd-4420-9699-b9f873be191d)  
+
 - **解读**: 
   - 提供了一个无量纲的误差指标。
   - 通常用于数据真实值范围变化较大时。
@@ -91,9 +85,8 @@
 - **全称**: Mean Squared Percentage Error（均方百分比误差）
 - **功能**: 测量预测值相对于真实值的平方百分比误差的平均值。
 - **公式**:  
-  \[
-  \text{MSPE} = \frac{1}{n} \sum \left( \frac{\text{true} - \text{pred}}{\text{true}} \right)^2
-  \]
+![image](https://github.com/user-attachments/assets/8bfe2159-07a6-482b-968a-f3703c8081d1)   
+
 - **解读**: 
   - 类似于 MAPE，但对较大的误差更加敏感。
 
