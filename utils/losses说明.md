@@ -35,12 +35,8 @@
 - 适用于目标值（`target`）非零的情况。
 
 **损失公式**：
-\[
-\text{MAPE} = \frac{1}{N} \sum_{i=1}^N \left| \frac{\hat{y}_i - y_i}{y_i} \right|
-\]
-其中：
-- \(\hat{y}_i\) 是预测值。
-- \(y_i\) 是目标值。
+![image](https://github.com/user-attachments/assets/c2f20324-8d11-443d-8755-0d35b9c7ebbd)  
+
 
 **方法**：
 1. 用 `divide_no_nan(mask, target)` 计算加权权重，避免除数为零。
@@ -64,9 +60,7 @@
 - sMAPE 是一种对称误差度量方式，避免了 MAPE 的单向性问题。
 
 **损失公式**：
-\[
-\text{sMAPE} = \frac{200}{N} \sum_{i=1}^N \frac{|\hat{y}_i - y_i|}{|\hat{y}_i| + |y_i|}
-\]
+![image](https://github.com/user-attachments/assets/6e20288a-d215-4050-9f68-380815c81b26)  
 
 **方法**：
 1. 计算预测值和目标值的绝对误差。
